@@ -31,5 +31,10 @@ Entao('coloco o item no carrinho') do
   if true
     p "produto no carrinho"
   end
+
+  if false
+    raise "produto não encontrado"
+  end
+  
   sleep(2)
 end

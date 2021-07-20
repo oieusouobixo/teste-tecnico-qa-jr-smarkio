@@ -1,0 +1,9 @@
+---
+default: -p pretty -p firefox -p html
+pretty: --format pretty
+progress: --format progress
+firefox: BROWSERS=firefox
+chrome: BROWSERS=chrome
+chrome_headless: BROWSERS=chrome_headless
+firefox_headless: BROWSERS=firefox_headless
+html: --format html --out=reports/relatorio.html

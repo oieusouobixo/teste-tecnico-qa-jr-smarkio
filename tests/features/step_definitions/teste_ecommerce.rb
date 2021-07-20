@@ -8,11 +8,11 @@ Quando('encontro o item {string}') do |string|
   expect(page.has_text?('Camisa Inferno - Preta')).to eq true
   
   if true
-    p "Achei o produto!"
+    p "produto encontrado"
   end
 
   if false
-    raise "Não achei o produto!"
+    raise "produto não encontrado"
   end
 
   find(class: "title", text: 'Camisa Inferno - Preta').click
@@ -29,7 +29,7 @@ Entao('coloco o item no carrinho') do
   expect(page.has_text?('Camisa Inferno - Preta - M')).to eq true
 
   if true
-    p "Estou no carrinho!"
+    p "produto no carrinho"
   end
   sleep(2)
 end
